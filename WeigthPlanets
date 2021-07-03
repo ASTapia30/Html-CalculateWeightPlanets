@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tu peso en un lugar donde pesas menos!</title>
+<style>
+    body
+      {background-color:#30303d;
+      color:white;
+      font-family:Helvetica;}
+  </style>
+  </head>
+  <body>
+    <h1>Tu peso en otro planeta</h1>
+    <p>En la tierra pesas distinto que en los otros planetas!!</p>
+    <script>
+      var usuario = prompt("Cual es tu peso en la tierra?");
+      var planeta = prompt("Elige tu planeta:\n 1 Marte\n 2 Jupiter\n 3 Mercurio\n 4 Venus\n 5 Saturno\n 6 Neptuno");
+      var peso = parseFloat(usuario);
+      var g_tierra =9.8;
+      var g_marte =3.7;
+      var g_jupiter =24.8;
+      var g_mercurio=3.7
+      var g_venus=8.87
+      var g_saturno=10.44
+      var g_neptuno=11.15
+      var peso_marte;
+      var peso_jupiter;
+      var peso_mercurio
+      var peso_tirra
+      var peso_venus
+      var peso_saturno
+      var peso_neptuno
+      if (planeta==1)
+      {
+        peso_marte= peso * g_marte / g_tierra;
+      + document.write("Su peso en Marte es de:<strong> " + peso_marte.toFixed(2)+ "Kg</strong>");
+      }
+      else if(planeta==2)
+        {
+        peso_jupiter=peso*g_jupiter/g_tierra;
+      + document.write("Su peso en Jupiter es de:<strong> " + peso_jupiter.toFixed(2)+ "Kg</strong>");
+      }
+      else if(planeta==3)
+      {
+        peso_mercurio=peso*g_mercurio/g_tierra;+
+        document.write("Su peso en Mercurio es de:<strong> " + peso_mercurio.toFixed(2)+"Kg</strong>");
+      }
+      else if(planeta==4)
+      {
+        peso_venus=peso*g_venus/g_tierra;+
+        document.write("Su peso en Venus es de:<strong> " + peso_venus.toFixed(2)+ "Kg</strong>");
+      }
+      else if(planeta==5)
+      {
+        peso_saturno=peso*g_saturno/g_tierra;+
+        document.write("Su peso en Saturno es de:<strong> " + peso_saturno.toFixed(2)+"Kg</strong>");
+      }
+      else if(planeta==6)
+      {
+        peso_neptuno=peso*g_neptuno/g_tierra;+
+        document.write("Su peso en Neptuno es de: <strong>" + peso_neptuno.toFixed(2)+"Kg</strong>");
+      }
+      else
+      {
+        document.write("La opcion que escogiste no es valida!")
+      }
+
+      </script>
+  </body>
+</html>
